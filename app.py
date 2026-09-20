@@ -614,5 +614,5 @@ if __name__ == "__main__":
         css=CUSTOM_CSS,
         js=FORCE_DARK_JS,
         server_name="0.0.0.0",
-        server_port=int(os.environ.get("PORT", 7860)),
+        server_port=7860,
     )

@@ -608,8 +608,11 @@ with gr.Blocks(title="TenantCare AI") as demo:
 
 
 if __name__ == "__main__":
+    import os
     demo.launch(
         theme=gr.themes.Soft(primary_hue="indigo", secondary_hue="slate", neutral_hue="slate"),
         css=CUSTOM_CSS,
         js=FORCE_DARK_JS,
+        server_name="0.0.0.0",
+        server_port=int(os.environ.get("PORT", 7860)),
     )
